@@ -9,7 +9,7 @@ private:
     int ano;
 
 public:
-    // Constructor corregido
+  
     Libro(string n, string a, int o) {
         nombre = n;
         autor = a;
@@ -25,14 +25,14 @@ public:
 
 class Novela : public Libro {
 private:
-    string tipo; // Cambiado String a string
+    string tipo; 
 
 public:
-    // Constructor corregido
+    
     Novela(string n, string a, int o, string t) : Libro(n, a, o), tipo(t) {}
 
     void mostrarinfo() {
-        Libro::mostrarinfo(); // Corregido para llamar al método de la clase base
+        Libro::mostrarinfo(); 
         cout << "Tipo de libro: " << tipo << endl;
     }
 };
